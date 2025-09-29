@@ -14,8 +14,9 @@ export const AboutSection = () => {
             </h3>
             <p className="text-muted-foreground">
               With 2 years of experience in web development, I specialize in
-              creating responsive, accessible, and performant web applications
-              using modern technologies.
+              building and maintaining brownfield and greenfield enterprise
+              systems. While I have deep expertise in Java and Spring Boot, I
+              also enjoy using Python for personal projects!
             </p>
             <p className="text-muted-foreground">
               I'm passionate about creating robust solutions to complex
@@ -29,7 +30,8 @@ export const AboutSection = () => {
                 Get In Touch
               </a>
               <a
-                href="#contact"
+                href="/Terence-Resume.pdf"
+                download="Terence-Resume.pdf"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download Resume
