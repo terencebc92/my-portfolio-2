@@ -98,31 +98,102 @@
   }
 }
 
-@utility container {
-  margin-inline: auto;
-  padding-inline: 2rem;
+@layer utilities {
+  .container {
+    margin-inline: auto;
+    padding-inline: 2rem;
+    /* Optional background for testing */
+    /* background-color: red; */
 
-  @media (width >= 640px;) {
-    max-width: 640px;
-  }
+    @media (min-width: 640px) {
+      max-width: 640px;
+    }
 
-  @media (width >= 768px) {
-    max-width: 768px;
-  }
+    @media (min-width: 768px) {
+      max-width: 768px;
+    }
 
-  @media (width >= 1024px) {
-    max-width: 1024px;
-  }
+    @media (min-width: 1024px) {
+      max-width: 1024px;
+    }
 
-  @media (width >= 1280px) {
-    max-width: 1280px;
-  }
+    @media (min-width: 1280px) {
+      max-width: 1280px;
+    }
 
-  @media (width >= 1400px) {
-    max-width: 1400px;
+    @media (min-width: 1400px) {
+      max-width: 1400px;
+      /* Optional background for testing */
+      /* background-color: blue; */
+    }
   }
 }
 
+@layer utilities {
+  /* Text Glow */
+  .text-glow {
+    @apply relative;
+    text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+  }
+
+  /* Card Hover */
+  .card-hover {
+    @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
+  }
+
+  /* Gradient Border */
+  .gradient-border {
+    @apply relative rounded-md;
+    background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card)));
+    background-clip: padding-box;
+    border: 1px solid transparent;
+  }
+
+  /* Cosmic Button */
+  .cosmic-button {
+    @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium 
+      transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
+      hover:scale-105 active:scale-95;
+  }
+
+  /* Star */
+  .star {
+    @apply absolute rounded-full bg-primary;
+    box-shadow: 0 0 10px 2px var(--star-shadow-color);
+  }
+
+  /* Star Dark Mode */
+  .dark .star {
+    @apply bg-white;
+    --star-shadow-color: rgba(128, 128, 128, 0.4);
+  }
+
+  /* Meteor */
+  .meteor {
+    @apply absolute rounded-full;
+    background: linear-gradient(
+      to right,
+      hsla(var(--primary) / 0.5),
+      hsla(var(--primary) / 0.3),
+      transparent
+    );
+    box-shadow: 0 0 10px 5px rgba(200, 200, 200, 0.4);
+  }
+
+  /* Meteor Dark Mode */
+  .dark .meteor {
+    @apply absolute rounded-full;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.3),
+      transparent
+    );
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* 
 @utility text-glow {
   @apply relative;
   text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
@@ -156,7 +227,7 @@
 }
 
 @utility meteor {
-  /* @apply absolute bg-linear-to-r from-primary via-primary to-transparent rounded-full; */
+  @apply absolute bg-linear-to-r from-primary via-primary to-transparent rounded-full;
   @apply absolute rounded-full;
   background: linear-gradient(
     to right,
@@ -170,7 +241,7 @@
 .dark .meteor {
   @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
-}
+} */
 
 #root {
   max-width: 100%;
