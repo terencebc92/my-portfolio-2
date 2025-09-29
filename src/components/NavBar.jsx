@@ -64,18 +64,16 @@ export const NavBar = () => {
 
         {/* Mobile */}
 
-        <div className="flex items-center">
-          <div className="block md:hidden">
-            <ThemeToggle2 className="mr-[5px]" />
-          </div>
-          <button
-            onClick={() => setIsMenuOpen((prev) => !prev)}
-            className="md:hidden p-2 text-foreground z-50"
-            aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+        <div className="ml-auto block md:hidden">
+          <ThemeToggle2 className="mr-[5px]" />
         </div>
+        <button
+          onClick={() => setIsMenuOpen((prev) => !prev)}
+          className="md:hidden p-2 text-foreground z-50"
+          aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
 
         <div
           className={cn(
