@@ -26,6 +26,10 @@ export const HeroSection = () => {
             for web applications. From APIs to databases, I enjoy learning and
             applying technologies that make applications fast and dependable.
           </p>
+          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+            Everything you see here runs on my homelab, where I experiment with
+            backend systems, containers, and deployment pipelines.
+          </p>
 
           <div className="pt4 opacity-0 animate-fade-in-delay-4">
             <a href="#contact" className="cosmic-button">
