@@ -46,10 +46,11 @@ export const AboutSection = () => {
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Web development</h4>
+                  <h4 className="font-semibold text-lg">Backend Development</h4>
                   <p className="text-muted-foreground">
-                    Creating responsive websites and web applications with
-                    modern frameworks
+                    Building reliable server-side applications with Java,
+                    Python, and Spring Boot, focusing on clean architecture and
+                    scalability.
                   </p>
                 </div>
               </div>
@@ -61,10 +62,12 @@ export const AboutSection = () => {
                   <User className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">UI/UX Design</h4>
+                  <h4 className="font-semibold text-lg">
+                    API Design & Integration
+                  </h4>
                   <p className="text-muted-foreground">
-                    Designing intuitive user interfaces and seamless user
-                    experiences
+                    Creating and consuming RESTful and GraphQL APIs, ensuring
+                    efficient communication between services.
                   </p>
                 </div>
               </div>
@@ -76,10 +79,12 @@ export const AboutSection = () => {
                   <Briefcase className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Project Management</h4>
+                  <h4 className="font-semibold text-lg">
+                    Database & Data Handling
+                  </h4>
                   <p className="text-muted-foreground">
-                    Leading projects from conception to completion with agile
-                    methodologies
+                    Working with PostgreSQL, MySQL, and NoSQL databases to
+                    design schemas, write queries, and optimize data flow.
                   </p>
                 </div>
               </div>

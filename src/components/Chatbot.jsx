@@ -95,12 +95,12 @@ export const ChatbotSection = () => {
         </a>
 
         <div style={{ width: "100%" }}>
-          <h2>Chat with my AI assistant! </h2>
+          {/* <h2>Chat with my AI assistant! </h2> */}
           <p>
-            Find out more about Terence's career and skills - powered by
-            qwen3:0.6b
+            Curious about my experience? This chatbot runs on a RAG app I built
+            with Qwen 0.6b. No GPU here, so replies may take a moment.{" "}
           </p>
-          <div className="bg-card p-8 rounded-lg shadow-xs">
+          <div className="bg-card p-8 rounded-lg shadow-xs mt-5">
             <div style={{ marginBottom: "10px" }}>
               <div style={{ textAlign: "left" }}>
                 <strong>Suggested Questions:</strong>

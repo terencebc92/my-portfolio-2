@@ -22,8 +22,9 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            Specializing in backend development, I create stellar web
-            experiences with modern technologies.
+            I'm a backend developer passionate about building solid foundations
+            for web applications. From APIs to databases, I enjoy learning and
+            applying technologies that make applications fast and dependable.
           </p>
 
           <div className="pt4 opacity-0 animate-fade-in-delay-4">
