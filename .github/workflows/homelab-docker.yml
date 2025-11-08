@@ -6,7 +6,8 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest # this is on github runner.. self-hosted is local runner
+    runs-on: self-hosted
     steps:
       # Step 1: Checkout code
       - name: Checkout code
